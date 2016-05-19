@@ -67,13 +67,13 @@
 
 
                     <ul class="navbar-nav sf-menu navbar-right sf-js-enabled sf-arrows" data-type="navbar">
-                        <li class="active">
+                        <li >
                             <a href="index.html">Accueil</a>
                         </li>
                         <li>
                             <a href="commander.html">Commande</a>
                         </li>
-                        <li>
+                        <li class="active">
                             <a href="Contacts.php">Nous Contacter</a>
                         </li>
 
@@ -164,24 +164,12 @@
     <section class="well-12 bg-image-left bg-image-left--4">
       <div class="container container-wide text-center">
         <h2 class="head-bord-4">
-                    <span class="small">
-                        Lorem ipsum
-                      </span>
                       CONTACTER NOUS
         </h2>
 
         <div class="row center-sm text-left offset-2">
           <div class="col-md-3">
-            <address class="contact-info">
-              <p>8901 Marmora Road <br>
-                Glasgow, DO4 89GR.</p>
-              <dl>
-                <dt>Tel:</dt>
-                <dd><a href="callto:#">959 603 6030</a></dd>
-              </dl>
-
-              <a href="mailto:#">mail@demolink.org</a>
-            </address>
+            
           </div>
           <div class="col-md-6">
             <!-- Php -->
