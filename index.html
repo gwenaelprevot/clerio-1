@@ -13,6 +13,18 @@
     <link href="./Home_files/bootstrap.css" rel="stylesheet">
 <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
 <link href="./styles.css" rel="stylesheet">
+    <style>
+    nav > ul > li:nth-child(1) > a,
+nav > ul > li:hover > a,
+nav > ul > li > a:hover {
+    color: #fff;
+}
+nav > ul > li:nth-child(1) > a:after,
+nav > ul > li:hover > a:after,
+nav > ul > li > a:hover:after {
+    background: #f64d00;
+}
+    </style>
 <div class="page">
     <!--========================================================
                               HEADER
@@ -25,7 +37,7 @@
 					<nav>
 						
 						<ul>
-						<li><a  rel="" href="index.html" class="active">Accueil</a></li>
+						<li><a  rel="" href="index.html" >Accueil</a></li>
 							<li><a  href="commander.html">Commander</a></li>
                             <li><a  href="Contacts.php">Contact</a></li>
 						</ul>

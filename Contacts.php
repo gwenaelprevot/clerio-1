@@ -35,6 +35,21 @@
   </div>
   <script src="js/html5shiv.js"></script>
   <![endif]-->
+    
+    
+            <style>
+    nav > ul > li:nth-child(3) > a,
+nav > ul > li:hover > a,
+nav > ul > li > a:hover {
+    color: #fff;
+}
+nav > ul > li:nth-child(3) > a:after,
+nav > ul > li:hover > a:after,
+nav > ul > li > a:hover:after {
+    background: #f64d00;
+}
+    </style>
+    
   <script src="Contacts_fichiers/device.js"></script>
 <script src="Contacts_fichiers/common.js" charset="UTF-8" type="text/javascript"></script>
 <script src="Contacts_fichiers/map.js" charset="UTF-8" type="text/javascript"></script>
