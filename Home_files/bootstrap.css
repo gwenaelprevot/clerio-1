@@ -10613,7 +10613,7 @@ button.close {
   padding: 0;
 }
 .rd-mailform .form-group + .form-group:not(.btn-wr):not(.textarea) {
-  margin-left: 1.38888889rem;
+  /*margin-left: 1.38888889rem;*/
 }
 @media (max-width: 1199px) {
   .rd-mailform .form-group + .form-group:not(.btn-wr):not(.textarea) {
