@@ -12,9 +12,9 @@
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   <meta name="format-detection" content="telephone=no">
   <title>Contacts</title>
-
+<link href="styles.css" rel="stylesheet">
   <!-- Bootstrap -->
-  <link href="Contacts_fichiers/bootstrap.css" rel="stylesheet">
+  <link href="Home_files/bootstrap.css" rel="stylesheet">
 
   <!-- Links -->
   <link rel="stylesheet" href="Contacts_fichiers/rd-mailform.css">
@@ -53,34 +53,23 @@
   <!--========================================================
                             HEADER
   =========================================================-->
-<header>
-        <div id="stuck_container" class="stuck_container">
-            <div class="container container-wide">
-
-                <nav class="navbar navbar-default navbar-static-top ">
-
-                    <div class="navbar-header center-xs">
-                        <h1 class="navbar-brand">
-                            <a href="index.html">Clerio.fr</a>
-                        </h1>
-                    </div>
-
-
-                    <ul class="navbar-nav sf-menu navbar-right sf-js-enabled sf-arrows" data-type="navbar">
-                        <li >
-                            <a href="index.html">Accueil</a>
-                        </li>
-                        <li>
-                            <a href="commander.html">Commande</a>
-                        </li>
-                        <li class="active">
-                            <a href="Contacts.php">Nous Contacter</a>
-                        </li>
-
-                    </ul>
-                </nav>
-      </div>
-    </div>
+<header class="fix">
+  <div id="header">
+			<div class="wrap group">
+				<div class="head-wrap group">
+					<img id="logo" class="log" alt="logo" src="img/logo.png">
+					<nav>
+						
+						<ul>
+						<li><a  rel="" href="index.html" class="active">Accueil</a></li>
+							<li><a  href="commander.html">Commander</a></li>
+                            <li><a  href="Contacts.php">Contact</a></li>
+						</ul>
+					</nav>
+				</div> <!-- .head-wrap -->
+				<div class="lang-selector"><a id="langswitch" href="#" data-lang="en">FR</a></div>
+			</div> <!-- .wrap < header -->
+		</div>
 
   <div style="top: -58px; visibility: hidden; position: fixed; width: 100%; margin-top: 0px;" id="stuck_container" class="stuck_container isStuck">
       <div class="container container-wide">
@@ -226,13 +215,13 @@
   <!--========================================================
                           FOOTER
   =========================================================-->
-  <footer>
+ <footer>
     <section>
       <div class="container container-wide center-sm">
         <div class="row">
           <div class="col-md-5 ">
             <p class="rights">
-              © <span id="copyright-year">2016</span> Clerio, TOUT LES DROITS RESERVER.
+              © <span id="copyright-year">2016</span> Clerio, TOUS LES DROITS RESERVES.
             </p>
           </div>
           <div class="col-md-2 text-center ">
@@ -253,8 +242,4 @@
     </section>
   </footer>
 </div>
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/bootstrap.min.js"></script>
-<script src="js/tm-scripts.js"></script> <!-- begin olark code --> <script data-cfasync="false" type='text/javascript'>/*<![CDATA[*/ window.olark || (function (c) {     var f = window, d = document, l = f.location.protocol == "https:" ? "https:" : "http:", z = c.name, r = "load";     var nt = function () {         f[z] = function () {             (a.s = a.s || []).push(arguments)         };         var a = f[z]._ = {}, q = c.methods.length;         while (q--) {             (function (n) {                 f[z][n] = function () {                     f[z]("call", n, arguments)                 }             })(c.methods[q])         }         a.l = c.loader;         a.i = nt;         a.p = {             0: +new Date         };         a.P = function (u) {             a.p[u] = new Date - a.p[0]         };         function s() {             a.P(r);             f[z](r)         }          f.addEventListener ? f.addEventListener(r, s, false) : f.attachEvent("on" + r, s);         var ld = function () {             function p(hd) {                 hd = "head";                 return ["<", hd, "></", hd, "><", i, ' onl' + 'oad="var d=', g, ";d.getElementsByTagName('head')[0].", j, "(d.", h, "('script')).", k, "='", l, "//", a.l, "'", '"', "></", i, ">"].join("")             }              var i = "body", m = d[i];             if (!m) {                 return setTimeout(ld, 100)             }             a.P(1);             var j = "appendChild", h = "createElement", k = "src", n = d[h]("div"), v = n[j](d[h](z)), b = d[h]("iframe"), g = "document", e = "domain", o;             n.style.display = "none";             m.insertBefore(n, m.firstChild).id = z;             b.frameBorder = "0";             b.id = z + "-loader";             if (/MSIE[ ]+6/.test(navigator.userAgent)) {                 b.src = "javascript:false"             }             b.allowTransparency = "true";             v[j](b);             try {                 b.contentWindow[g].open()             } catch (w) {                 c[e] = d[e];                 o = "javascript:var d=" + g + ".open();d.domain='" + d.domain + "';";                 b[k] = o + "void(0);"             }             try {                 var t = b.contentWindow[g];                 t.write(p());                 t.close()             } catch (x) {                 b[k] = o + 'd.write("' + p().replace(/"/g, String.fromCharCode(92) + '"') + '");d.close();'             }             a.P(2)         };         ld()     };     nt() })({     loader: "static.olark.com/jsclient/loader0.js",     name: "olark",     methods: ["configure", "extend", "declare", "identify"] }); /* custom configuration goes here (www.olark.com/documentation) */ olark.identify('7830-582-10-3714'); /*]]>*/</script> <noscript><a href="https://www.olark.com/site/7830-582-10-3714/contact" title="Contact us" target="_blank">Questions?     Feedback?</a> powered by <a href="http://www.olark.com?welcome" title="Olark live chat software">Olark live chat     software</a></noscript> <!-- end olark code -->
-</body><!-- Google Tag Manager --><noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-N7VWVN" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push( {'gtm.start': new Date().getTime(),event:'gtm.js'} );var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-N7VWVN');</script> <!-- End Google Tag Manager -->
+
